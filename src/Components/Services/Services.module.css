@@ -1,0 +1,25 @@
+.services {
+    height: 80vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background: linear-gradient(to right, rgb(247, 250, 252), rgb(233, 236, 237));
+}
+
+.header h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 154.5%;
+    letter-spacing: 0.035em;
+    color: #000000;
+    margin-bottom: -18px;
+}
+
+.text {
+    margin-top: -7rem;
+}

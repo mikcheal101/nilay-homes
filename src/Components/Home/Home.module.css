@@ -1,0 +1,44 @@
+.home {
+    display: flex;
+    height: 940px;
+    background-image: url('../../../public/BgImg.png');
+    background-size: cover;
+}
+
+.home__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home__text {
+    
+    margin-top: 20rem;
+    width: 45%;
+    height: 263px;
+    background: #003975;
+}
+
+.home__text p{
+    display: flex;
+    padding: 21px 133px 21px 70px;
+    margin: 0;
+    position: absolute;
+    width: 505px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+}
+
+.home__img {
+    background-image: url('../Utils/Img/house.png');
+    width: 55%;
+    height: 511px;
+    background-size: cover;
+    border-left: 1rem solid #fff;
+    border-bottom: 1rem solid #fff;
+}

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState } from "react";
+import NavBar from "./Components/NavBar/NavBar";
+import Header from "./Components/Header/Header";
+import SideBar from "./Components/Sidebar/SideBar";
+import Home from "./Components/Home/Home";
+import About from "./Components/About/About";
+import Services from "./Components/Services/Services";
+
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    console.log('here')
+    setIsOpen(!isOpen);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <NavBar toggleSidebar={toggleSidebar}/>
+      {isOpen && <SideBar isOpen={isOpen} toggleSidebar={toggleSidebar}/>}
+      <Home />
+      <About />
+      <Services />
+    </Fragment>
   );
 }
 
