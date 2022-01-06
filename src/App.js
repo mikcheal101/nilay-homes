@@ -1,11 +1,9 @@
 import React, { Fragment, useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
-import Header from "./Components/Header/Header";
 import SideBar from "./Components/Sidebar/SideBar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
-
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +15,12 @@ function App() {
 
   return (
     <Fragment>
-      <Header />
       <NavBar toggleSidebar={toggleSidebar}/>
       {isOpen && <SideBar isOpen={isOpen} toggleSidebar={toggleSidebar}/>}
       <Home />
       <About />
       <Services />
+      {/* <Contact /> */}
     </Fragment>
   );
 }
