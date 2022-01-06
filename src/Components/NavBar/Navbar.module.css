@@ -1,6 +1,10 @@
 .header {
     background: #003975;
     height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    width: 100%;
 }
 
 .header__container {
@@ -12,4 +16,10 @@
 
 .hamburger {
     cursor: pointer;
+}
+
+@media  screen and (max-width: 540px) {
+    .header__container {
+        padding: 17px 30px;
+    }
 }

@@ -136,9 +136,9 @@
     width: 50%;
     height: 739px;
     top: 67rem;
-    left: 39.4rem;
+    left: 45%;
     position: absolute;
-    clip-path: polygon(0 0%, 200% 35%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0%, 210% 35%, 100% 100%, 0% 100%);
 }
 
 .formHolder {
@@ -147,7 +147,7 @@
 
 .formHolder form input {
     margin-bottom: 0.8rem;
-    width: 457px;
+    width: 100%;
     height: 48px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 57, 117, 0.28);
@@ -157,7 +157,7 @@
 
 .formHolder form textarea {
     margin-bottom: 2rem;
-    width: 457px;
+    width: 100%;
     height: 152px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 57, 117, 0.28);
@@ -167,7 +167,7 @@
 
 .formHolder button {
     color: #ffffff;
-    width: 457px;
+    width: 100%;
     height: 48px;
     background: #003975;
     border-radius: 4px;
@@ -181,7 +181,63 @@
 }
 
 .footer {
-    width: 1440px;
     height: 177px;
     background: #393F47;
+}
+
+@media  screen and (max-width: 1439px) {
+    .item__text {
+        padding: 6rem 2rem 0 2rem;
+    }
+    .item__text h6 {
+        font-size: 16px;
+    }
+    
+    .form {
+        width: 50%;
+        height: 739px;
+        left: 42%;
+    }
+    .formHolder button {
+        width: 100%;
+        
+    }
+    .location {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .contactImg {
+        height: 5rem;
+    }
+    .contactImg p {
+        padding-top: 1rem;
+    }
+    .header {
+        height: 5rem;
+        display: block;
+        margin-left: 1rem;
+        margin-top: 7rem;
+    }
+    .items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .location {
+        width: 18rem;
+    }
+    .form {
+        width: 100%;
+        height: 34rem;
+        top: 120rem;
+        left: 0%;
+        clip-path: none;
+    }
+    .formHolder {
+        margin: 0rem 4rem;
+    }
+    .map {
+        margin: 38rem 2rem 3rem 2rem;
+    }
 }
