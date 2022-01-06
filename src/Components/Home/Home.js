@@ -9,7 +9,6 @@ const Home = () => {
                     <p>The Power of Design to make a better world</p>
                 </div>
                 <div className={styles.home__img}>
-                    {/* <img src={image} alt='A house' width="818px"/> */}
                 </div>
             </div>
         </div>
