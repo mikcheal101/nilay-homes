@@ -41,3 +41,19 @@
     color: #000000;
 
 }
+
+@media screen and (max-width: 540px) {
+    .about {
+        height: 20rem;
+    }
+    .about__img {
+        display: none;
+    }
+    .about__text {
+        width: 100%;
+    }
+    .text {
+        margin: 1rem;
+    }
+    
+}

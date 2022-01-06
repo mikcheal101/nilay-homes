@@ -11,10 +11,10 @@ const SideBar = ({ toggleSidebar, isOpen }) => {
             </div>
             <div>
                 <ul className={styles.navLinks}>
-                    <li><Icon name='logo'/></li>
-                    <li onClick={() => toggleSidebar()}><a href="#index">Who We Are</a></li>
-                    <li onClick={() => toggleSidebar()}><a href="#about">Our Services</a></li>
-                    <li onClick={() => toggleSidebar()}><a href="#projects">Our Projects</a></li>
+                    <li><a href="#home"><Icon name='logo'/></a></li>
+                    <li onClick={() => toggleSidebar()}><a href="#about">Who We Are</a></li>
+                    <li onClick={() => toggleSidebar()}><a href="#services">Our Services</a></li>
+                    <li onClick={() => toggleSidebar()}><a href="#about">Our Projects</a></li>
                     <li onClick={() => toggleSidebar()}><a className={''} href="#contact">Contact Us</a></li>
                 </ul>
             </div>
