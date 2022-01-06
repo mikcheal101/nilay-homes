@@ -20,7 +20,6 @@ function App() {
       <Home />
       <About />
       <Services />
-      {/* <Contact /> */}
     </Fragment>
   );
 }
