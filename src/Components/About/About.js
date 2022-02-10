@@ -9,7 +9,7 @@ const About = () => {
 
     useEffect(() => {
         gsap.to("#text1", {
-            x: -30,
+            x: 10,
             opacity: 0.9,
             duration: 2,
             scrollTrigger: {

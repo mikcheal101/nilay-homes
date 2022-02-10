@@ -30,7 +30,7 @@ const Services = () => {
             }
         })
         gsap.to("#text3", {
-            y: 180,
+            y: 15,
             opacity: 0.9,
             duration: 2,
             scrollTrigger: {
