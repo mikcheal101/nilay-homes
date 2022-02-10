@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Icon from '../Utils/Icons/Icons';
 import styles from './Services.module.css'
 import { services } from '../../Data';
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const service = services.map((item, i) => {
     return (
@@ -15,6 +17,27 @@ const service = services.map((item, i) => {
     )
 })
 const Services = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+        gsap.to("#text2", {
+            x: 50,
+            opacity: 0.9,
+            duration: 2,
+            scrollTrigger: {
+                trigger: "#text2",
+            }
+        })
+        gsap.to("#text3", {
+            y: 180,
+            opacity: 0.9,
+            duration: 2,
+            scrollTrigger: {
+                trigger: "#text3",
+            }
+        })
+    }, []);
     return (
         <div className={styles.services} id="services">
             <div className={styles.header}>
@@ -28,7 +51,7 @@ const Services = () => {
                 <p>Get in Touch</p>
             </div>
             <div className={styles.contact}>
-                <div className={styles.contactDetails}>
+                <div className={styles.contactDetails} id='text2'>
                     <h3>Call Us</h3>
                     <div className={styles.phone}>
                         <Icon name='phone'/>
@@ -43,7 +66,7 @@ const Services = () => {
                         <p>Address: Room No.7/144/41, 1st Floor, Pudussery Galleria, Cheroor P.O, Thrissur - 680008, Kerala, India</p>
                     </div>
                 </div>
-                <div className={styles.form}>
+                <div className={styles.form} id='text3'>
                     <div className={styles.formHolder}>
                     <h3>Leave us a message</h3>
                         <form>

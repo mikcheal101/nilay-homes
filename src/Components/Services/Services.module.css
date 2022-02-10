@@ -95,6 +95,7 @@
 .contactDetails {
     width: 45%;
     margin-left: 3rem;
+    margin-left: 0rem;
 }
 .contactDetails p {
     font-size: 16px;
@@ -135,7 +136,7 @@
     background: #ffffff;
     width: 50%;
     height: 739px;
-    top: 67rem;
+    top: 57rem;
     left: 45%;
     position: absolute;
     clip-path: polygon(0 0%, 210% 35%, 100% 100%, 0% 100%);
