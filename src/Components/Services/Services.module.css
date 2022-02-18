@@ -95,6 +95,7 @@
 .contactDetails {
     width: 45%;
     margin-left: 3rem;
+    margin-left: 0rem;
 }
 .contactDetails p {
     font-size: 16px;
