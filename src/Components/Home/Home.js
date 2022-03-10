@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import styles from './Home.module.css'
+import NavBar from '../NavBar/NavBar';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Layout from '../Layout/Layout';
 
 const Home = () => {
 
@@ -26,6 +28,7 @@ const Home = () => {
                 </div>
                 <div className={styles.home__img}>
                 </div>
+                <div className={styles.bottom} />
             </div>
         </div>
     )
