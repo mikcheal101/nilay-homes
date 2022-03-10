@@ -1,26 +1,20 @@
-import React, { Fragment, useState } from "react";
-import NavBar from "./Components/NavBar/NavBar";
-import SideBar from "./Components/Sidebar/SideBar";
+import React from "react";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
+import {Routes, Route} from "react-router-dom";
+import Layout from "./Components/Layout/Layout";
+    
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    console.log('here')
-    setIsOpen(!isOpen);
-  }
-
   return (
-    <Fragment>
-      <NavBar toggleSidebar={toggleSidebar}/>
-      {isOpen && <SideBar isOpen={isOpen} toggleSidebar={toggleSidebar}/>}
-      <Home />
-      <About />
-      <Services />
-    </Fragment>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" exact element={<Services />} />
+        </Route>
+    </Routes>
   );
 }
 
