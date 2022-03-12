@@ -12,15 +12,15 @@ body {
 }
 
 code {
-  font-family: Rubik, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: "Rubik", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 
 @media  screen and (min-width: 1441px) {
   body {
-    /* max-width:  1440px;
-    margin: 0 auto; */
+    /* max-width:  1440px; */
+    margin: 0 auto;
     scroll-behavior: smooth;
   }
 }
