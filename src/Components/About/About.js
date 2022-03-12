@@ -66,7 +66,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className={styles.about__img}>
-                    <img src={img} alt="" width="670" id="img" />
+                    <img src={img} alt="" width="100%" id="img" />
                 </div>
             </section>
 

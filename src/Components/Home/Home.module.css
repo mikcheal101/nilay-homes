@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 540px) {
     .home {
-        height: 26rem;
+        height: 100vh;
     }
     .home__text { 
         margin-top: 7rem;

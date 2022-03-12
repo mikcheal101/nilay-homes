@@ -51,11 +51,18 @@
     text-decoration: none;
 }
 
-
-
-@media  screen and (max-width: 540px) {
+@media  screen and (max-width: 768px) {
     .header__container {
-        padding: 17px 30px;
+        padding: 0px 55px;
+    }
+    .navLists {
+        font-size: 10px;
+    }
+  }
+
+@media  screen and (max-width: 600px) {
+    .header__container {
+        padding: 0px 30px;
     }
     .hamburger {
         display: block;
@@ -69,9 +76,3 @@
     
 }
 
-@media  screen and (min-width: 1441px) {
-    /* .header {
-        width: 1440px;
-        
-    } */
-  }

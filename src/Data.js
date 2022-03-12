@@ -49,3 +49,10 @@ export const services = [
         image: img8
     },
 ]
+
+export const servicesFilter = [
+    {id: 1, name: "All"},
+    {id: 2, name: "Interior Design"},
+    {id: 3, name: "Commercial Interior Design"},
+    {id: 4, name: "Architechture Design"},
+]

@@ -29,7 +29,3 @@
     cursor: pointer;
 }
 
-.navLinks a:hover {
-    color: #E8661C;
-    transition: 0.2s ease-in-out
-}
