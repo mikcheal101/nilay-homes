@@ -35,7 +35,7 @@ const NavBar = ({toggleSidebar}) => {
     return (
         <div className={styles.header}>
             <div className={styles.header__container}>
-                <div className={styles.logo}><Icon name='logo' /></div>
+                <div className={styles.logo}><Link to="/"><Icon name='logo' /></Link></div>
                 <div className={styles.navItemsContainer}>
                 <div className={styles.hamburger} onClick={toggleSidebar}><Icon name='hamburger'/></div>
                     <div className={styles.navItems}>

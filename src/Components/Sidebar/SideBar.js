@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from '../Utils/Icons/Icons';
 import { SidebarContainer } from './SideBarElements';
 import styles from './SideBar.module.css';
+import { Link } from 'react-router-dom';
 import img from '../Utils/Img/logo.jpeg'
 
 const SideBar = ({ toggleSidebar, isOpen }) => {
@@ -12,14 +13,12 @@ const SideBar = ({ toggleSidebar, isOpen }) => {
             </div>
             <div>
                 <ul className={styles.navLinks}>
-                    <li><a href="#home"><img src={img} alt='logo' width='50px' /></a></li>
-                    <li onClick={() => toggleSidebar()}><a href="#about">Who We Are</a></li>
-                    <li onClick={() => toggleSidebar()}><a href="#services">Our Services</a></li>
-                    <li onClick={() => toggleSidebar()}><a href="#about">Our Projects</a></li>
-                    <li onClick={() => toggleSidebar()}><a className={''} href="#contact">Contact Us</a></li>
+                    <li><Link to="/"><img src={img} alt="logo"  width="50px" /></Link></li>
+                    <li onClick={() => toggleSidebar()}><Link to="/about">Who We Are</Link></li>
+                    <li onClick={() => toggleSidebar()}><Link to="/services">Our Services</Link></li>
+                    <li onClick={() => toggleSidebar()}><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </div>
-            {/* <ListItems /> */}
         </SidebarContainer>
     )
 }

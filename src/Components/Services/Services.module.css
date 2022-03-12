@@ -5,10 +5,11 @@
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 12rem;
-    background: linear-gradient(to right, rgb(247, 250, 252), rgb(233, 236, 237));
+    margin-left: 4.8rem;
+    height: 16rem;
+    background: #fff;
 }
 
 .header h3 {
@@ -19,18 +20,28 @@
     letter-spacing: 0.035em;
     color: #000000;
     margin-bottom: -18px;
+    margin-top: 5rem;
 }
 
-.text {
-    margin-top: -7rem;
+.filter {
+    width: 35%;
+    margin: -2.5rem 0rem 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.active {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #008DC2;
 }
 
 .item {
-    /* width: 360px; */
     height: 360px;
     text-align: center;
-    /* margin: 6rem 1rem 0rem 1rem; */
-    /* background-image: url('../Utils/Img/house.png'); */
 }
 
 .item__text {
@@ -59,130 +70,16 @@
 .items {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    margin: 0rem 5rem 10rem 5rem;
     /* align-items: center; */
     /* border-top-left-radius: 20px;
     border-top-right-radius: 20px; */
     /* justify-items: start; */
 
 }
-
-.contactImg {
-    height: 356.23px;
-    background-image: url('../Utils/Img/contactImg.png');
-    background-size: cover;
-}
-
-.contactImg p {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: #FFFFFF;
-
-}
-
-.contact {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.contactDetails {
-    width: 45%;
-    margin-left: 3rem;
-    margin-left: 0rem;
-}
-.contactDetails p {
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.phone {
-    display: flex;
-    justify-content: space-between;
-    width: 10.5rem;
-    align-items: center;
-}
-
-.email {
-    display: flex;
-    justify-content: space-between;
-    width: 12.5rem;
-    align-items: center;
-}
-
-.location {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30rem;
-}
-
-.location svg {
-    margin-left: -5px;
-}
-
-.location p {
-    margin-left: 1rem;
-    width: 28rem;
-}
-
-.form {
-    background: #ffffff;
-    width: 50%;
-    height: 739px;
-    top: 67rem;
-    left: 45%;
-    position: absolute;
-    clip-path: polygon(0 0%, 210% 35%, 100% 100%, 0% 100%);
-}
-
-.formHolder {
-    margin: 11rem 4rem;
-}
-
-.formHolder form input {
-    margin-bottom: 0.8rem;
-    width: 100%;
-    height: 48px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 57, 117, 0.28);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-.formHolder form textarea {
-    margin-bottom: 2rem;
-    width: 100%;
-    height: 152px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 57, 117, 0.28);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-.formHolder button {
-    color: #ffffff;
-    width: 100%;
-    height: 48px;
-    background: #003975;
-    border-radius: 4px;
-}
-
-.map {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    margin: 20rem 3rem 4rem 3rem;
-}
-
 .footer {
-    height: 177px;
+    width: 100%;
+    height: 98px;
     background: #393F47;
 }
 
@@ -192,19 +89,6 @@
     }
     .item__text h6 {
         font-size: 16px;
-    }
-    
-    .form {
-        width: 50%;
-        height: 739px;
-        left: 42%;
-    }
-    .formHolder button {
-        width: 100%;
-        
-    }
-    .location {
-        width: 84%;
     }
 }
 
@@ -224,21 +108,11 @@
     .items {
         display: grid;
         grid-template-columns: 50% 50%;
+        margin: 0rem 1rem 5rem 1rem;
     }
-    .location {
-        width: 18rem;
-    }
-    .form {
+    .filter {
         width: 100%;
-        height: 34rem;
-        top: 120rem;
-        left: 0%;
-        clip-path: none;
-    }
-    .formHolder {
-        margin: 0rem 4rem;
-    }
-    .map {
-        margin: 38rem 2rem 3rem 2rem;
+        margin: 0.5rem 0rem 2rem 1rem;
     }
 }
+    
