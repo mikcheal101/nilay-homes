@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Icon from '../Utils/Icons/Icons';
 import styles from './Navbar.module.css'
 import { NavLink, Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 
 const navData = [
     {id: 1, name: "Home", link: "/"},
@@ -11,6 +12,7 @@ const navData = [
 ]
 const NavBar = ({toggleSidebar}) => {
     const [active, setActive] = useState(1);
+    const location  = useLocation()
 
     useEffect(() => {
         setActive(active)
@@ -21,7 +23,7 @@ const NavBar = ({toggleSidebar}) => {
             <div key={item.id}>
                  <ul className={styles.nav}>
                     <li onClick={() => setActive(item.id)}>
-                        <NavLink to={item.link} className={active === item.id ? styles.active : styles.navLists}>{item.name}</NavLink>
+                        <NavLink to={item.link} className={location.pathname === item.link ? styles.active : styles.navLists}>{item.name}</NavLink>
                     </li>
                 </ul>
             </div>
