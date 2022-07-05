@@ -45,7 +45,7 @@
 .email {
     display: flex;
     justify-content: space-between;
-    width: 12.5rem;
+    width: 15rem;
     align-items: center;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .location p {
-    margin-left: 1rem;
+    margin-left: 2rem;
     width: 28rem;
 }
 
