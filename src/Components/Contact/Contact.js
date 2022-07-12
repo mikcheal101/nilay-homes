@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
           <div className={styles.email}>
             <Icon name="at" />
-            <p>  nilaygurse86@gmail.com</p>
+            <p> nilaygurse86@gmail.com</p>
           </div>
           <div className={styles.location}>
             <Icon name="location" />
@@ -67,7 +67,7 @@ const Contact = () => {
         </div>
       </div>
       <div className={styles.map}>
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.4341682498098!2d76.2192450654825!3d10.545157966301609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ef4e8f57284d%3A0x49555bec8a63287c!2sNilay%20Homes!5e0!3m2!1sen!2sng!4v1641465960893!5m2!1sen!2sng"
           width="100%"
           height="450"
@@ -75,7 +75,11 @@ const Contact = () => {
           allowFullScreen=""
           loading="lazy"
           title="address"
-        ></iframe>
+        ></iframe> */}
+
+        {/* <div style="width: 100%"> */}
+    
+        {/* </div> */}
       </div>
       <div className={styles.footer}></div>
     </div>
