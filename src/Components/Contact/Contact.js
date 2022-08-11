@@ -35,11 +35,11 @@ const Contact = () => {
           <h3>Call Us</h3>
           <div className={styles.phone}>
             <Icon name="phone" />
-            <p>05323556508</p>
+            <p>+905323556508</p>
           </div>
           <div className={styles.email}>
             <Icon name="at" />
-            <p> nilaygurse86@gmail.com</p>
+            <p>info@nilayinteriorhomes.com</p>
           </div>
           <div className={styles.location}>
             <Icon name="location" />
